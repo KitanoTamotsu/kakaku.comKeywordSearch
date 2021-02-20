@@ -1,2 +1,0 @@
-# kakaku.comKeywordSearch
-Alfred workflow
