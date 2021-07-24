@@ -1,5 +1,8 @@
 ## 　　Lesson4.　シェルスクリプトでURLエンコードする
 #### 開発メモ
+ワークフロー
+<br><img width="600" src="https://user-images.githubusercontent.com/40127279/126853658-61b24681-679d-44c6-9026-a83834ad9570.png">
+
 ### 1.検索結果のURLを解析する
 　試しに[価格コム](https://kakaku.com)で『時計』と検索してみましょう
 <br>　リターンされたブラウザのURLはこうなっています
@@ -29,6 +32,10 @@ open "https://kakaku.com/search_results/"`echo -n $query | nkf -WsMQ | tr = % `
 <br>　ちなみに$queryはalfredの入力パラメータ＝検索キーワード
 <br>　nkfでs-jisに変換すると=つきのコードが返ってくるので
 <br>　trで=を%に置き換えています
+<br>
+<br>RunScript
+<img width="600"  src="https://user-images.githubusercontent.com/40127279/126853672-82bf5f0b-ad54-4b0d-adbc-5dedab57458c.png">
+
 ### そのた
 　・Alfredのインプットキーワドを”価格”、"Kakaku"として、
 <br>　　日本語でも英数でも起動できるようにしています（バイリンガル起動）
